@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo 2', cursive; }
+
+/* NAVBAR */
+.navbar-toggler {
+  background-color: #eb1b92; }
+
+.contenedor-navbar {
+  padding: 18px; }
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.navegacion-enlaces a {
+  color: #fff;
+  font-size: 1.4em;
+  padding: 2px;
+  border: solid 1px #c33b80;
+  border-radius: 12px 18px;
+  margin: 0 12px 0 12px;
+  align-self: center;
+  height: max-content; }
+
+.navegacion-enlaces img {
+  border-radius: 50px; }
+
+.navegacion-enlaces a {
+  transition: all 0.3s; }
+  .navegacion-enlaces a:hover {
+    background: #c33b80;
+    color: #fff;
+    transform: scale(1.1); }
+
+/* main */
+.contenedor-imagen {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 4px 8px 12px #eb1b92;
+  display: flex;
+  justify-content: center; }
+  .contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    opacity: .7; }
+  .contenedor-imagen h1 {
+    font-size: 5em;
+    color: #eb1b92;
+    position: absolute;
+    align-self: auto;
+    text-align: center; }
+
+.contenedor-titulosecundario {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px; }
+
+.parallax-main {
+  background: #000000;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../IMG/fondo1.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.main-contenido {
+  padding: 70px 0 100px 0; }
+
+.titulo-secundario {
+  font-size: 3.5em;
+  color: #ffffff; }
+
+.contenedor-texto {
+  padding: 12px 32px 12px 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .contenedor-texto p {
+    width: 70%;
+    text-align: justify;
+    font-size: 1.5em;
+    color: #ffffff; }
+    .contenedor-texto p span {
+      font-weight: bold; }
+
+/* footer */
+#backgraund {
+  background: #212529; }
+
+#cont-foot {
+  padding-top: 60px; }
+
+.copy {
+  color: #eb1b92;
+  padding: 4px;
+  margin-bottom: 4px;
+  font-size: 1.2em;
+  font-weight: 600; }
+
+.titulo-footer {
+  display: flex;
+  justify-content: center;
+  width: max-content; }
+  .titulo-footer h3 {
+    align-self: center;
+    color: #eb1b92;
+    font-weight: 600;
+    font-size: 1.8em; }
+
+.contenedor-icon {
+  display: inline-flex;
+  list-style: none;
+  height: max-content;
+  width: 100%;
+  justify-content: start;
+  padding: 0;
+  margin-bottom: 12px; }
+  .contenedor-icon .icon {
+    position: relative;
+    background: #c8c4c4;
+    border-radius: 50%;
+    margin: 0px 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .contenedor-icon .icon:hover .icon-nombre {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; }
+  .contenedor-icon .icon-nombre {
+    position: absolute;
+    top: 0;
+    font-size: 0.7em;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .contenedor-icon .instagram {
+    display: flex;
+    justify-content: center; }
+    .contenedor-icon .instagram:hover {
+      background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+      color: #fff; }
+      .contenedor-icon .instagram:hover .icon-nombre {
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        color: #fff; }
+        .contenedor-icon .instagram:hover .icon-nombre::before {
+          background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+          color: #fff; }
+    .contenedor-icon .instagram a {
+      text-decoration: none;
+      color: #000000; }
+    .contenedor-icon .instagram i {
+      align-content: flex-end;
+      padding: 8px; }

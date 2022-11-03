@@ -1,0 +1,40 @@
+/* NAVBAR */
+.navbar-toggler{
+    background-color: $rosa-1;    
+}
+.contenedor-navbar{
+    padding: 18px;
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navegacion-enlaces {
+    a{
+        color: #fff;
+        font-size: 1.4em;
+    
+        padding: 2px;
+        border: solid 1px #c33b80;
+        border-radius: 12px 18px;
+        margin: 0 12px 0 12px;
+    
+        align-self: center;
+        height: max-content;
+    }
+} 
+.navegacion-enlaces {
+   img{
+        border-radius: 50px;
+    }
+    a{
+        transition: all 0.3s;
+        &:hover{
+            background: #c33b80;
+            color: #fff;
+            transform: scale(1.1);
+        }
+    }
+    
+} 
