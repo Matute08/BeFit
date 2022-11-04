@@ -1,0 +1,58 @@
+.fondo-nosotros{
+    background-image: url(../IMG/fondoRosa.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.titulo-nosotros{
+    display: flex;
+    justify-content: center;
+    h1{
+        font-size: 5em;
+        color: $negro;
+        padding-top: 18px;
+        text-align: center;
+        align-self: auto;
+        text-decoration:underline 5px;
+    }
+
+}
+.card-profes{
+    margin: 28px 28px 28px 28px;
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../IMG/fondoCards.png);
+    background-size:cover ;
+    background-repeat: no-repeat;
+
+    border-radius: 10% 15% 10% 15%;
+
+    transition: all 400ms ease;
+    &:hover{
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+        transform: translateY(-3%);
+    }
+    img{
+        height: 400px;
+        width: 400px;
+        align-self: center;
+
+        padding-top: 40px;
+        border-radius: 50%;
+    }
+}
+.card-body{
+    .card-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        h5{
+            font-size: 3em;
+            color: $blanco;
+            text-decoration:underline $rosa-3;
+        }
+    }
+}
+

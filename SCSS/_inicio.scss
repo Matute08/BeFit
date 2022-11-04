@@ -27,6 +27,11 @@
     display: flex;
     justify-content: center;
     margin-top: 18px;
+    .titulo-secundario{
+        font-size: 3.5em;
+        color: $blanco;
+    
+    }
 }
 .parallax-main{
     background: $negro;
@@ -42,12 +47,6 @@
 }
 .main-contenido{
     padding: 70px 0 100px 0;
-}
-
-.titulo-secundario{
-    font-size: 3.5em;
-    color: $blanco;
-
 }
 .contenedor-texto{
     padding: 12px 32px 12px 32px;
