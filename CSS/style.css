@@ -92,7 +92,8 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .titulo-nosotros {
   display: flex;
@@ -105,8 +106,21 @@
     align-self: auto;
     text-decoration: underline 5px; }
 
+.section-main {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.card-property {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 10px 0 10px;
+  width: 80%;
+  justify-items: center; }
+
 .card-profes {
-  margin: 28px 28px 28px 28px;
+  width: 400px;
+  margin: 28px 12px 28px 12px;
   display: flex;
   justify-content: center;
   background-image: url(../IMG/fondoCards.png);
@@ -118,8 +132,8 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
     transform: translateY(-3%); }
   .card-profes img {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     align-self: center;
     padding-top: 40px;
     border-radius: 50%; }
@@ -129,7 +143,7 @@
   flex-direction: row;
   justify-content: center; }
   .card-body .card-title h5 {
-    font-size: 3em;
+    font-size: 2em;
     color: #ffffff;
     text-decoration: underline #ff22c8; }
 
@@ -215,7 +229,7 @@
       align-content: flex-end;
       padding: 8px; }
 
-@media screen and (min-width: 320px) and (max-width: 424px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   /*NAV*/
   .navegacion-enlaces a {
     width: 100%;
@@ -238,6 +252,19 @@
   .card-responsive {
     display: grid;
     grid-template-columns: 1fr; }
+  .titulo-nosotros h1 {
+    font-size: 3em; }
+  .card-property {
+    grid-template-columns: 1fr; }
+  .section-main {
+    width: 100%;
+    justify-content: center; }
+  .card-profes {
+    width: 100%; }
+    .card-profes img {
+      height: 210px;
+      width: 210px;
+      border-radius: 30%; }
   /* FOOTER*/
   .titulo-footer h3 {
     font-size: 1em; }
@@ -251,7 +278,33 @@
       width: 40px;
       height: 40px; } }
 
-@media screen and (min-width: 425px) and (max-width: 991px) {
+@media screen and (min-width: 426px) and (max-width: 750px) {
+  /*NAV*/
+  .navegacion-enlaces a {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px; }
+  .navegacion-enlaces img {
+    position: absolute;
+    top: 0%;
+    right: 0%; }
+  /* Main NOSOTROS*/
+  .titulo-nosotros h1 {
+    font-size: 3em; }
+  .card-property {
+    grid-template-columns: 1fr; }
+  .section-main {
+    width: 100%;
+    justify-content: center; }
+  .card-profes {
+    width: 80%; }
+    .card-profes img {
+      height: 210px;
+      width: 210px;
+      border-radius: 30%; } }
+
+@media screen and (min-width: 751px) and (max-width: 991px) {
   /*NAV*/
   .navegacion-enlaces a {
     width: 100%;
@@ -269,6 +322,18 @@
     font-size: 2.5em !important; }
   .contenedor-texto p {
     font-size: 1.4em; }
+  /*MAIN NOSOTROS*/
+  .titulo-nosotros h1 {
+    font-size: 3em; }
+  .card-property {
+    grid-template-columns: 1fr 1fr; }
+  .section-main {
+    width: 100%; }
+  .card-profes {
+    width: 90%; }
+    .card-profes img {
+      height: 250px;
+      width: 250px; }
   /* FOOTER*/
   .titulo-footer h3 {
     font-size: 1.5em; }
@@ -281,3 +346,10 @@
     .contenedor-icon .icon {
       width: 40px;
       height: 40px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+  /* Main NOSOTROS*/
+  .section-main {
+    width: 80%; }
+  .titulo-nosotros h1 {
+    font-size: 3.5em; } }
