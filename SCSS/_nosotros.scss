@@ -1,5 +1,5 @@
 .fondo-nosotros{
-    background-image: url(../IMG/fondoRosa.png);
+    background-image: url(../IMG/5__fondoRosa.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
 
-    background-image: url(../IMG/fondoCards.png);
+    background-image: url(../IMG/4__fondoCards.png);
     background-size:cover ;
     background-repeat: no-repeat;
 
@@ -67,6 +67,36 @@
             color: $blanco;
             text-decoration:underline $rosa-3;
         }
+    }
+}
+.titulosecundario-nosotros{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    h2{
+        font-size: 3.5em;
+        color: $negro;
+    }
+}
+.lista-beneficios{
+    display: flex;
+    justify-content: start;
+    ul{
+        align-self: center;
+        li{
+            font-size: 1.5em;
+        }
+    }
+}
+.imagen-recordatorio{
+    display: flex;
+    justify-content: center;
+    img{
+        align-self: center;
+        width:80%;
+        height: 80%;
+        border-radius: 62px 44px;
+        opacity: 0.8;
     }
 }
 

@@ -42,7 +42,7 @@
   box-shadow: 4px 8px 12px #eb1b92;
   display: flex;
   justify-content: center;
-  background-image: url(../IMG/fondo.png);
+  background-image: url(../IMG/1__fondoInicio.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +65,7 @@
 
 .parallax-main {
   background: #000000;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../IMG/fondo1.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../IMG/3__parallax.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@
       font-weight: bold; }
 
 .fondo-nosotros {
-  background-image: url(../IMG/fondoRosa.png);
+  background-image: url(../IMG/5__fondoRosa.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@
   margin: 28px 12px 28px 12px;
   display: flex;
   justify-content: center;
-  background-image: url(../IMG/fondoCards.png);
+  background-image: url(../IMG/4__fondoCards.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10% 15% 10% 15%;
@@ -146,6 +146,32 @@
     font-size: 2em;
     color: #ffffff;
     text-decoration: underline #ff22c8; }
+
+.titulosecundario-nosotros {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px; }
+  .titulosecundario-nosotros h2 {
+    font-size: 3.5em;
+    color: #000000; }
+
+.lista-beneficios {
+  display: flex;
+  justify-content: start; }
+  .lista-beneficios ul {
+    align-self: center; }
+    .lista-beneficios ul li {
+      font-size: 1.5em; }
+
+.imagen-recordatorio {
+  display: flex;
+  justify-content: center; }
+  .imagen-recordatorio img {
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 62px 44px;
+    opacity: 0.8; }
 
 /* footer */
 #backgraund {
@@ -242,7 +268,7 @@
     right: 0%; }
   /* Main pagina INICIO*/
   .contenedor-imagen {
-    background: url(../IMG/fondoInicio320px.svg);
+    background: url(../IMG/2__fondoInicioMobile.svg);
     background-position: center;
     background-size: cover; }
     .contenedor-imagen h1 {
@@ -252,7 +278,7 @@
     font-size: 2.5em !important; }
   .contenedor-texto p {
     width: 100%;
-    font-size: 1.2em; }
+    font-size: 1.1em; }
   /* Main pagina NOSOTROS*/
   .card-responsive {
     display: grid;
@@ -296,11 +322,12 @@
     right: 0%; }
   /*Main INICIO*/
   .contenedor-imagen {
-    background: url(../IMG/NoTeConformes.png);
+    background: url(../IMG/2__fondoInicioMobile.svg);
     background-position: center;
     background-size: cover; }
     .contenedor-imagen h1 {
-      font-size: 2.5em; }
+      padding-top: 48px;
+      font-size: 3em; }
   /* Main NOSOTROS*/
   .titulo-nosotros h1 {
     font-size: 3em; }
@@ -328,8 +355,13 @@
     top: 0%;
     right: 0%; }
   /* Main pagina INICIO*/
-  .contenedor-imagen h1 {
-    font-size: 3.5em; }
+  .contenedor-imagen {
+    background: url(../IMG/2__fondoInicioMobile.svg);
+    background-position: center;
+    background-size: cover; }
+    .contenedor-imagen h1 {
+      padding-top: 70px;
+      font-size: 3.5em; }
   .titulo-secundario {
     font-size: 2.5em !important; }
   .contenedor-texto p {
@@ -360,6 +392,7 @@
       height: 40px; } }
 
 @media screen and (min-width: 992px) and (max-width: 1100px) {
+  /*Main INICIO*/
   /* Main NOSOTROS*/
   .section-main {
     width: 80%; }
