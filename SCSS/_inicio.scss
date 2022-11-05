@@ -2,20 +2,20 @@
 .contenedor-imagen{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    position: relative;
     box-shadow: 4px 8px 12px $rosa-1;
     
-
     display: flex;
     justify-content: center;
-    img{
-        width: 100%;
-        height: 100%;
-        opacity: .7;
-    }
+
+    background-image: url(../IMG/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    opacity: 0.9;
+
     h1{
-        font-size: 5em;
+        font-size:3.9em;
         color: $rosa-1;
         position: absolute;
         align-self:auto;
