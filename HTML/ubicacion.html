@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- LINK A GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- LINK A FONTAWESONE -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- LINK A BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- LINK A ESTILOS -->
+        <link rel="stylesheet" href="../CSS/style.css">
     
+    
+        <title>UBICACION || BEFIT</title>
+    </head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark contenedor-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegacion" id="navbarNavAltMarkup">
+                    <div class="navbar-nav navegacion-enlaces">
+
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        <a class="nav-link" href="../HTML/nosotros.html">NOSOTROS</a>
+                        <img src="../IMG/logo.png" alt="BEFIT" width="100" height="80"></a>
+                        <a class="nav-link" href="#">ENTRENAMIENTOS</a>
+                        <a class="nav-link" href="../HTML/ubicacion.html">UBICACION</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-ubicacion">
+
+        <div class="titulo-entrenamiento">
+            <h1>
+                ENTRENAMIENTOS
+            </h1>
+        </div>
+
+        <div class="contenedor-entrenamiento">
+            <div class="subtitulo-entrenamiento">
+                <h3>
+                    Entrenamiento Funcional
+                </h3>
+            </div>
+            <div class="container contenido-entrenamiento">
+                <div class="row">
+                    <div class="col descripcion-entrenamiento">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, cum.
+                    </div>
+
+                    <div class="col imagen-entrenamiento">
+                        <img src="../IMG/FUNCIONAL-1.jpg" alt="">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="titulo-horarios">
+            <h2>
+                HORARIOS
+            </h2>
+        </div>
+
+        <div class="table-responsive contenedor-tabla"> 
+            <table class="table calendario">
+                <thead>
+                <tr>
+                    <th scope="col">Horarios</th>
+                    <th scope="col">Lunes</th>
+                    <th scope="col">Martes</th>
+                    <th scope="col">Miercoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="turno">
+                    <td colspan="6">TURNO MAÑANA</td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row" class="horas">10:30 a 11:30 </td>
+                    <td class="funcional">Funcional</td>
+                    <td class="personalizado">Personalizado</td>
+                    <td class="funcional">Funcional</td>
+                    <td class="personalizado">Personalizado </td>
+                    <td class="funcional">Funcional </td>
+
+                    </tr>
+                    <tr class="turno">
+                        <td colspan="6">TURNO TARDE</td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="row" class="horas">16:30 a 17:30 </td>
+                        <td class="personalizado">Personalizado</td>
+                        <td class="libre">-</td>
+                        <td class="funcional">Funcional</td>
+                        <td class="libre">-</td>
+                        <td class="funcional">Funcional</td>
+                    </tr>
+                    <tr>
+                        <th colspan="row" class="horas">17:30 a 18:30 </td>
+                        <td class="libre">-</td>
+                        <td class="funcional">Funcional</td>
+                        <td class="libre">-</td>
+                        <td class="funcional">Funcional</td>
+                        <td class="libre">-</td>
+
+                    </tr>
+                    <tr>
+                        <th colspan="row" class="horas">18:30 a 19:30</td>
+                        <td class="funcional">Funcional</td>
+                        <td class="funcional">Funcional</td>
+                        <td class="personalizado">Personalizado</td>
+                        <td class="funcional">Funcional </td>
+                        <td class="funcional">Funcional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="dark" id="backgraund">
+        <div class="container text-center ">
+            <div class="row justify-content-center" id="cont-foot">
+                <div class="col-lg-5 titulo-footer">
+                    <h3>Síguenos en nuestro Instagram</h3>
+                </div>
+                <div class="col-lg-1 d-flex justify-content-center icono-insta">
+                    <ul class="contenedor-icon">
+                        <li class="icon instagram">
+                            <span class="icon-nombre">Instagram</span>
+                            <a href="https://instagram.com/befit.entrenamiento1?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col contenedor-footer">
+                    <p class="col-lg-12 copy ">© 2022 Matias Gonzalez Autelli / Todos los derechos reservados </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- LINK A JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>

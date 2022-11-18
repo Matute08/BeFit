@@ -87,6 +87,11 @@
     .contenedor-texto p span {
       font-weight: bold; }
 
+#texto-final {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
 .fondo-nosotros {
   background-image: url(../IMG/5__fondoRosa.png);
   background-attachment: fixed;
@@ -172,6 +177,136 @@
     height: 80%;
     border-radius: 62px 44px;
     opacity: 0.8; }
+
+.main-ubicacion {
+  background-image: url(../IMG/7__fondocalendario.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.contenedor-tabla {
+  display: flex;
+  justify-content: center; }
+
+.calendario {
+  background-color: #eb1b92;
+  align-content: center;
+  width: 80%;
+  min-height: 300px;
+  margin: 30px;
+  border-radius: 10px; }
+
+.titulo-horarios {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-size: 3em;
+  padding-top: 12px; }
+
+.titulo-entrenamiento {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  padding-top: 12px; }
+
+.contenedor-entrenamiento {
+  border: 3px solid white;
+  margin: 32px;
+  padding: 18px; }
+  .contenedor-entrenamiento .subtitulo-entrenamiento {
+    display: flex;
+    justify-content: center; }
+    .contenedor-entrenamiento .subtitulo-entrenamiento h3 {
+      color: #ffffff;
+      font-size: 2em; }
+  .contenedor-entrenamiento .contenido-entrenamiento {
+    border: 3px solid white;
+    height: 300px; }
+    .contenedor-entrenamiento .contenido-entrenamiento .descripcion-entrenamiento {
+      border: 3px solid white;
+      color: #ffffff;
+      font-size: 1.5em; }
+
+.imagen-entrenamiento {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center; }
+  .imagen-entrenamiento img {
+    object-position: center center;
+    width: 60%;
+    height: 100%; }
+
+.turno {
+  width: 100%; }
+  .turno td {
+    background-color: #000000;
+    text-align: center;
+    height: 12px;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 0; }
+
+.libre {
+  background-color: #eb1b92;
+  width: 10%;
+  margin: 2%;
+  padding: 2%;
+  height: 60px;
+  border: 2px outset transparent;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px; }
+
+.horas {
+  background-color: #ff66c4;
+  width: 10%;
+  margin: 2%;
+  padding: 2%;
+  height: 60px;
+  border: 2px outset transparent;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.3em; }
+
+.funcional {
+  background-color: #eb1b92;
+  width: 10%;
+  margin: 2%;
+  padding: 2%;
+  height: 60px;
+  border: 2px outset transparent;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.3em; }
+
+.personalizado {
+  background-color: #eb1b92;
+  width: 10%;
+  margin: 2%;
+  padding: 2%;
+  height: 60px;
+  border: 2px outset transparent;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.3em; }
+
+thead tr th {
+  background-color: transparent;
+  border: 1px solid  transparent;
+  border-radius: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+  font-size: 25px; }
+
+td:active span {
+  visibility: visible; }
 
 /* footer */
 #backgraund {
@@ -296,6 +431,23 @@
       height: 210px;
       width: 210px;
       border-radius: 30%; }
+  /*Main pagina UBICACION*/
+  .contenedor-tabla {
+    display: block; }
+  .titulo-horarios {
+    display: flex;
+    justify-content: center; }
+    .titulo-horarios h1 {
+      font-size: .8em;
+      width: min-content; }
+  .turno td {
+    font-size: 1.5em; }
+  .horas {
+    font-size: 1em; }
+  .funcional {
+    font-size: 1em; }
+  .personalizado {
+    font-size: 1em; }
   /* FOOTER*/
   .titulo-footer h3 {
     font-size: 1em; }
@@ -343,6 +495,28 @@
       width: 210px;
       border-radius: 30%; } }
 
+/*Main pagina UBICACION*/
+.contenedor-tabla {
+  display: block; }
+
+.titulo-horarios {
+  display: flex;
+  justify-content: center; }
+  .titulo-horarios h1 {
+    font-size: .8em; }
+
+.turno td {
+  font-size: 1.5em; }
+
+.horas {
+  font-size: 1em; }
+
+.funcional {
+  font-size: 1em; }
+
+.personalizado {
+  font-size: 1em; }
+
 @media screen and (min-width: 751px) and (max-width: 991px) {
   /*NAV*/
   .navegacion-enlaces a {
@@ -378,6 +552,23 @@
     .card-profes img {
       height: 250px;
       width: 250px; }
+  /*Main pagina UBICACION*/
+  .contenedor-tabla {
+    display: flex;
+    justify-content: center; }
+  .titulo-horarios {
+    display: flex;
+    justify-content: center; }
+    .titulo-horarios h1 {
+      font-size: 1em; }
+  .turno td {
+    font-size: 1.5em; }
+  .horas {
+    font-size: 1em; }
+  .funcional {
+    font-size: 1em; }
+  .personalizado {
+    font-size: 1em; }
   /* FOOTER*/
   .titulo-footer h3 {
     font-size: 1.5em; }
@@ -391,10 +582,20 @@
       width: 40px;
       height: 40px; } }
 
-@media screen and (min-width: 992px) and (max-width: 1100px) {
+@media screen and (min-width: 992px) and (max-width: 1700px) {
   /*Main INICIO*/
+  .contenedor-imagen h1 br {
+    display: none; }
   /* Main NOSOTROS*/
-  .section-main {
-    width: 80%; }
   .titulo-nosotros h1 {
-    font-size: 3.5em; } }
+    font-size: 3.5em; }
+  /*Main pagina UBICACION*/
+  .contenedor-tabla {
+    display: flex;
+    justify-content: center; }
+  .horas {
+    font-size: 1.2em; }
+  .funcional {
+    font-size: 1.2em; }
+  .personalizado {
+    font-size: 1.2em; } }
