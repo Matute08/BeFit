@@ -311,75 +311,157 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.contenedor-tabla {
-  display: flex;
-  justify-content: center; }
-
-.calendario {
-  background-color: #ff6ca8;
-  align-content: center;
-  width: 80%;
-  min-height: 300px;
-  margin: 30px;
-  border-radius: 10px; }
-
-.titulo-horarios {
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 12px; }
-  .titulo-horarios h2 {
-    font-size: 3em; }
-
-.titulo-ubicacion {
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 12px; }
-  .titulo-ubicacion h1 {
-    font-size: 3em; }
-
-.turno {
-  width: 100%; }
-  .turno td {
-    background-color: #000000;
+  .main-ubicacion .titulo-horarios {
+    text-transform: uppercase;
     text-align: center;
-    height: 12px;
     color: #ffffff;
-    font-size: 2em;
-    padding: 0; }
-
-.libre, .horas, .funcional, .personalizado {
-  width: 10%;
-  margin: 2%;
-  padding: 2%;
-  height: 60px;
-  border: 2px outset transparent;
-  vertical-align: top;
-  text-align: center;
-  border-radius: 10px;
-  font-size: 1.2em; }
-
-thead tr th {
-  background-color: transparent;
-  border: 1px solid  transparent;
-  border-radius: 50px;
-  height: 50px;
-  text-align: center;
-  vertical-align: center;
-  font-size: 25px; }
-
-td:active span {
-  visibility: visible; }
+    padding-top: 12px; }
+    .main-ubicacion .titulo-horarios h2 {
+      font-size: 3em; }
+  .main-ubicacion .titulo-precio {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 12px; }
+    .main-ubicacion .titulo-precio h2 {
+      font-size: 3em; }
+  .main-ubicacion .titulo-ubicacion {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 18px; }
+    .main-ubicacion .titulo-ubicacion h1 {
+      font-size: 4em; }
+  .main-ubicacion .mapa-ubicacion {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0; }
+    .main-ubicacion .mapa-ubicacion iframe {
+      border-radius: 20px; }
+  .main-ubicacion .card-precios {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 44px auto;
+    padding: 40px 20px;
+    -webkit-box-shadow: 0 10px 15px #d5d5d5;
+    box-shadow: 0 10px 15px #dc97c7;
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .main-ubicacion .card-precios:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+    .main-ubicacion .card-precios::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40%;
+      z-index: 1;
+      -webkit-transform: skewY(-5deg) scale(1.5);
+      transform: skewY(-5deg) scale(1.5); }
+    .main-ubicacion .card-precios .title h2 {
+      position: relative;
+      margin: 20px  0 0;
+      padding: 0;
+      color: #fff;
+      font-size: 28px;
+      z-index: 2; }
+    .main-ubicacion .card-precios .title .fa {
+      color: #fff;
+      font-size: 60px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 100px;
+      -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); }
+    .main-ubicacion .card-precios .price {
+      position: relative;
+      z-index: 2; }
+    .main-ubicacion .card-precios .price h4 {
+      margin: 0;
+      padding: 20px 0;
+      color: #fff;
+      font-size: 60px; }
+    .main-ubicacion .card-precios a {
+      position: relative;
+      z-index: 2;
+      background: #fff;
+      color: black;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 40px;
+      display: block;
+      text-align: center;
+      margin: 20px auto 0;
+      font-size: 1.2em;
+      font-weight: 600;
+      cursor: pointer;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      transition: all .5s ease; }
+      .main-ubicacion .card-precios a:hover {
+        background-color: #eb1b92;
+        color: #ffffff;
+        transform: scale(1.1); }
+  .main-ubicacion .col-sm-6:nth-child(1) .card-precios,
+  .main-ubicacion .col-sm-6:nth-child(1) .card-precios .title .fa {
+    background: linear-gradient(-45deg, #f403d1, #64b5f6); }
+  .main-ubicacion .col-sm-6:nth-child(2) .card-precios,
+  .main-ubicacion .col-sm-6:nth-child(2) .card-precios .title .fa {
+    background: linear-gradient(-45deg, #ffec61, #f321d7); }
+  .main-ubicacion .contenedor-tabla {
+    display: flex;
+    justify-content: center; }
+    .main-ubicacion .contenedor-tabla .calendario {
+      background-color: #ff6ca8;
+      align-content: center;
+      width: 80%;
+      min-height: 300px;
+      margin: 30px;
+      border-radius: 10px; }
+      .main-ubicacion .contenedor-tabla .calendario thead tr th {
+        background-color: transparent;
+        border: 1px solid  transparent;
+        border-radius: 50px;
+        height: 50px;
+        text-align: center;
+        vertical-align: center;
+        font-size: 25px; }
+      .main-ubicacion .contenedor-tabla .calendario tbody .turno {
+        width: 100%; }
+        .main-ubicacion .contenedor-tabla .calendario tbody .turno td {
+          background-color: #000000;
+          text-align: center;
+          height: 12px;
+          color: #ffffff;
+          font-size: 2em;
+          padding: 0; }
+      .main-ubicacion .contenedor-tabla .calendario tbody tr .libre, .main-ubicacion .contenedor-tabla .calendario tbody tr .horas, .main-ubicacion .contenedor-tabla .calendario tbody tr .funcional, .main-ubicacion .contenedor-tabla .calendario tbody tr .personalizado {
+        width: 10%;
+        margin: 2%;
+        padding: 2%;
+        height: 60px;
+        border: 2px outset transparent;
+        vertical-align: top;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 1.2em; }
+      .main-ubicacion .contenedor-tabla .calendario tbody tr td:active span {
+        visibility: visible; }
 
 .main-entrenamiento {
-  background-image: url(../IMG/7__fondocalendario.png);
+  background-image: url(../IMG/4__fondoCards.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
 
 .titulo-entrenamiento {
   text-transform: uppercase;
@@ -390,10 +472,19 @@ td:active span {
   .titulo-entrenamiento h1 {
     font-size: 3em; }
 
+.titulo-img {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 12px; }
+  .titulo-img h2 {
+    font-size: 3em; }
+
 .blog-card {
+  height: 250px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 12px auto 12px auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
   background: #ffffff;
@@ -429,7 +520,8 @@ td:active span {
     .blog-card .description h1 {
       line-height: 1;
       margin: 0;
-      font-size: 2em; }
+      font-size: 1.7em;
+      color: #000000; }
     .blog-card .description h2 {
       font-size: 1rem;
       font-weight: 300;
@@ -438,14 +530,15 @@ td:active span {
       margin-top: 5px; }
   .blog-card p {
     position: relative;
-    margin: 1rem 0 0; }
+    margin: 1rem 0 0;
+    color: #000000; }
     .blog-card p:first-of-type {
       margin-top: 1.25rem; }
       .blog-card p:first-of-type:before {
         content: "";
         position: absolute;
         height: 5px;
-        background: #eb1b92;
+        background: aqua;
         width: 35px;
         top: -0.75rem;
         border-radius: 3px; }
@@ -478,6 +571,30 @@ td:active span {
           transform: skew(3deg); }
         .blog-card.alt .details {
           padding-left: 25px; } }
+
+.contenedor-galeria {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 32px; }
+  .contenedor-galeria .gal-iten img {
+    max-height: 250px;
+    overflow: hidden;
+    margin: 25px 10px 25px 35px;
+    border: 7px solid #fff;
+    opacity: 0.55;
+    z-index: -1;
+    transition: transform .15s ease;
+    filter: blur(1px); }
+  .contenedor-galeria .gal-iten img:hover {
+    opacity: 1.0;
+    height: 300px;
+    /* display: block;*/
+    position: absolte;
+    transform: scale(1.15);
+    filter: drop-shadow(0 15px 15px #000); }
+
+.active {
+  scroll-snap-type: unset; }
 
 /* footer */
 #backgraund {
