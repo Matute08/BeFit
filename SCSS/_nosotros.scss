@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     h1{
-        font-size: 5em;
+        font-size: 4em;
         color: $negro;
         padding-top: 18px;
         text-align: center;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-}
+}/*
 .card-property{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,9 +52,8 @@
         height: 300px;
         width: 300px;
         align-self: center;
-
-        padding-top: 40px;
-        border-radius: 50%;
+        margin-top: 30px;
+        border-radius: 50px;
     }
 }
 .card-body{
@@ -68,7 +67,7 @@
             text-decoration:underline $rosa-3;
         }
     }
-}
+} */
 .titulosecundario-nosotros{
     display: flex;
     justify-content: center;
@@ -100,3 +99,175 @@
     }
 }
 
+
+
+
+
+
+
+
+
+.contenedor-card{
+    width: 100vw;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+    justify-items: center;
+
+}
+.card{
+    margin-bottom: 50px;
+}
+
+.border{
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+
+  &:hover{
+    border: 1px solid white;
+  }
+}
+
+
+
+
+.card{
+    height: 379px;
+    width: 350px;
+    background: grey;
+    border-radius: 10px;
+    transition:  0.8s ease;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.card0{
+    background: url("../IMG/ANDYHERLEIN.jpg") center center no-repeat;
+    background-size: 350px;
+
+  &:hover{
+        background: url("../IMG/ANDYHERLEIN.jpg") left center no-repeat;
+        background-size: 500px;
+        h2{
+            opacity: 1;
+        }
+
+        .tw, .fb, .ig{
+            opacity: 1;
+        }
+    }
+}
+
+
+.card1{
+    background: url("../IMG/TOMIGALEA.jpg") center center no-repeat;
+    background-size: 350px;
+
+    &:hover{
+        background: url("../IMG/TOMIGALEA.jpg") left center no-repeat;
+        background-size: 500px;
+        h2{
+            opacity: 1;
+        }
+        .tw, .fb, .ig{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+.card2{
+        background: url("../IMG/CAMIAMBURI.jpg") center center no-repeat;
+        background-size: 350px;
+
+    &:hover{
+        background: url("../IMG/CAMIAMBURI.jpg") left center no-repeat;
+        background-size: 500px;
+    h2{
+        opacity: 1;
+    }
+
+    .tw, .fb, .ig{
+        opacity: 1;
+    }
+  }
+}
+
+.card3{
+    background: url("../IMG/FARORODRIGUEZ.jpg") center center no-repeat;
+    background-size: 350px;
+
+    &:hover{
+        background: url("../IMG/FARORODRIGUEZ.jpg") left center no-repeat;
+        background-size: 500px;
+        h2{
+            opacity: 1;
+        }
+        .tw, .fb, .ig{
+            opacity: 1;
+        }
+    }
+}
+
+.border{
+    border: none !important;
+    h2{
+        color: $rosa-1;
+        margin: 20px;
+        opacity: 0;
+        transition: opacity 1s ease  ;
+
+        font-size: 1.9em;
+        font-weight: 400;
+        width: min-content;
+        text-align: center;
+    }
+}
+
+.tw, .fb, .ig{  
+    opacity: 0;
+    transition: opacity 1s ease;
+    padding-bottom: 24px;
+}
+
+.icons{
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+        color: $blanco;
+    }
+    .tw{
+        &:hover{
+            color: #00acee;
+        }
+    }
+    .fb{
+        &:hover{
+            color: #3b5998;
+        }
+    }
+    .ig{
+        &:hover{
+            color: #C13584;  
+        }
+    }
+}

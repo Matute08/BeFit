@@ -15,11 +15,15 @@
     opacity: 0.9;
 
     h1{
-        font-size:3.9em;
+        padding-top: 28px;
+        font-size:4em;
         color: $rosa-1;
         position: absolute;
         align-self:auto;
         text-align: center;
+        br{
+            display: none;
+        }
     }
 }
 

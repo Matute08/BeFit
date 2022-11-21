@@ -1,198 +1,30 @@
-//media de celular pequeño
-@media screen and (min-width: 320px)and(max-width:425px){
+@media screen and (min-width: 1025px) and (max-width:1200px){
 
-    /*NAV*/
-    .navegacion-enlaces{
-        a{
-            width: 100%;
-            height: 40px;
-            text-align: center;
-            margin-top: 30px;
-        }
-        img{
-            position: absolute;
-            top: 0%;
-            right: 0%;
-        }
-    }
-    /* Main pagina INICIO*/
-    .contenedor-imagen{
-        background: url(../IMG/2__fondoInicioMobile.svg);
-        background-position:center;
-        background-size:cover;
-        h1{
-            margin-top: 12%;
-            font-size: 3em;
-        }
-    }
-    .titulo-secundario{
-        font-size: 2.5em !important;
-    } 
-    .contenedor-texto{
-        p{
-            width: 100%;
-            font-size: 1.1em;
-        }
-    }
-    /* Main pagina NOSOTROS*/
-    .card-responsive{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .titulo-nosotros{
-        h1{
-            font-size: 3em;
-        }
-    }
-    .card-property{
-        grid-template-columns: 1fr;
-    }
-    .section-main{
-        width: 100%;
-        justify-content: center;
-    }
-    .card-profes{
-        width: 100%;
-
-        img{
-            height: 210px;
-            width: 210px;
-            border-radius: 30% ;
-        }
-    }
-
-    /*Main pagina UBICACION*/
-
-    .contenedor-tabla{
-        display: block;
-    }
-    .titulo-horarios{
-        display: flex;
-        justify-content: center;
-        h1{
-            font-size: .8em;
-            width: min-content;
-
-        }
-    }
-    .turno{
-        td{
-            font-size: 1.5em;
-        }
-
-    }
-    .horas{
-        font-size: 1em;
-    }
-    .funcional{
-        font-size: 1em;
-    }
-    .personalizado{
-        font-size: 1em;
-    }
-
-
-
-    /* FOOTER*/
-    .titulo-footer{
-        h3{
-            font-size: 1em;
-        }
-    }
-    .copy{
-        font-size: .8em;
-    }
-    .icono-insta{
-        width: max-content;
-    }
-    .contenedor-icon{
-        width: max-content;
-        .icon{
-            width: 40px;
-            height: 40px;
-        }
-    }
-}
-//media de celulares medios a tablet
-@media screen and (min-width: 426px)and(max-width:750px){
-    /*NAV*/
-    .navegacion-enlaces{
-        a{
-            width: 100%;
-            height: 40px;
-            text-align: center;
-            margin-top: 30px;
-        }
-        img{
-            position: absolute;
-            top: 0%;
-            right: 0%;
-        }
-    }
     /*Main INICIO*/
     .contenedor-imagen{
-        background: url(../IMG/2__fondoInicioMobile.svg);
-        background-position:center;
-        background-size:cover;
         h1{
-            padding-top: 48px;
-            font-size: 3em;
+            padding-top: 28px;
         }
     }
+
+
     /* Main NOSOTROS*/
     .titulo-nosotros{
         h1{
-            font-size: 3em;
-        }}
-    .card-property{
-        grid-template-columns: 1fr;
-    }
-    .section-main{
-        width: 100%;
-        justify-content: center;
-    }
-    .card-profes{
-        width: 80%;
-
-        img{
-            height: 210px;
-            width: 210px;
-            border-radius: 30% ;
+            font-size: 3.5em;
         }
     }
-}
     /*Main pagina UBICACION*/
 
     .contenedor-tabla{
-        display: block;
-    }
-    .titulo-horarios{
         display: flex;
         justify-content: center;
-        h1{
-            font-size: .8em;
-        }
     }
-    .turno{
-        td{
-            font-size: 1.5em;
-        }
-
-    }
-    .horas{
-        font-size: 1em;
-    }
-    .funcional{
-        font-size: 1em;
-    }
-    .personalizado{
-        font-size: 1em;
-    }
-
-
+}
 
 //tablet mediana a grande
-@media screen and (min-width: 751px)and(max-width:991px){
+@media screen and (min-width: 769px)and(max-width:1024px){
+
     /*NAV*/
     .navegacion-enlaces{
         a{
@@ -207,6 +39,7 @@
             right: 0%;
         }
     }
+
     /* Main pagina INICIO*/
     .contenedor-imagen{
         background: url(../IMG/2__fondoInicioMobile.svg);
@@ -215,9 +48,11 @@
         h1{
             padding-top: 70px;
             font-size: 3.5em;
-            
+            br{
+                display: block;
+            }
         }
-}
+    }
     .titulo-secundario{
         font-size: 2.5em !important;
     } 
@@ -233,20 +68,7 @@
             font-size: 3em;
         }
     }
-    .card-property{
-        grid-template-columns: 1fr 1fr;
-    }
-    .section-main{
-        width: 100%;
-        
-    }
-    .card-profes{
-        width: 90%;
-        img{
-            height: 250px;
-            width: 250px;
-        }
-    }
+
         /*Main pagina UBICACION*/
 
     .contenedor-tabla{
@@ -267,15 +89,8 @@
         }
 
     }
-    .horas{
-        font-size: 1em;
-    }
-    .funcional{
-        font-size: 1em;
-    }
-    .personalizado{
-        font-size: 1em;
-    }
+
+
     /* FOOTER*/
     .titulo-footer{
         h3{
@@ -297,37 +112,172 @@
         }
     }
 }
-@media screen and (min-width: 992px)and(max-width:1700px){
+
+//media de celulares medios a tablet
+@media screen and (min-width: 481px)and(max-width:768px){
+
+    /*NAV*/
+    .navegacion-enlaces{
+        a{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        img{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+    }
+
     /*Main INICIO*/
     .contenedor-imagen{
+        background: url(../IMG/2__fondoInicioMobile.svg);
+        background-position:center;
+        background-size:cover;
         h1{
+            padding-top: 48px;
+            font-size: 3em;
             br{
-                display: none;
+                display: block;
             }
         }
     }
 
-
     /* Main NOSOTROS*/
     .titulo-nosotros{
         h1{
-            font-size: 3.5em;
+            font-size: 3em;
         }
+    }
+    .contenedor-card{
+        grid-template-columns: repeat(1,1fr);
     }
 
     /*Main pagina UBICACION*/
-
     .contenedor-tabla{
+        display: block;
+    }
+
+    .turno{
+        td{
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+
+//media de celular pequeño
+@media screen and (min-width: 320px)and(max-width:480px){
+
+    /*NAV*/
+    .navegacion-enlaces{
+        a{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        img{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+    }
+
+
+    /* Main pagina INICIO*/
+    .contenedor-imagen{
+        background: url(../IMG/2__fondoInicioMobile.svg);
+        background-position:center;
+        background-size:cover;
+        h1{
+            margin-top: 12%;
+            font-size: 3em;
+            br{
+                display: block;
+            }
+        }
+    }
+    .titulo-secundario{
+        font-size: 2.5em !important;
+    } 
+    .contenedor-texto{
+        p{
+            width: 100%;
+            font-size: 1.1em;
+        }
+    }
+
+
+    /* Main pagina NOSOTROS*/
+    .card-responsive{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .titulo-nosotros{
+        h1{
+            font-size: 3em;
+        }
+    }
+
+
+    /*Main pagina UBICACION*/
+
+    .titulo-entrenamiento{
+        h1{
+            font-size: 2.2em;
+        }
+    }
+    .titulo-horarios{
         display: flex;
         justify-content: center;
+        h2{
+            font-size: 2.2em;
+            width: min-content;
+
+        }
+    }
+    .contenedor-tabla{
+        display: block;
+    }
+
+    .turno{
+        td{
+            font-size: 1.5em;
+        }
+
     }
     .horas{
-        font-size: 1.2em;
+        font-size: 1em;
     }
-    .funcional{
-        font-size: 1.2em;
+    .contenedor-card{
+        grid-template-columns: repeat(1,1fr);
     }
-    .personalizado{
-        font-size: 1.2em;
+
+    .card{
+        width: 300px;
+    }
+
+    /* FOOTER*/
+    .titulo-footer{
+        h3{
+            font-size: 1em;
+        }
+    }
+    .copy{
+        font-size: .8em;
+    }
+    .icono-insta{
+        width: max-content;
+    }
+    .contenedor-icon{
+        width: max-content;
+        .icon{
+            width: 40px;
+            height: 40px;
+        }
     }
 }

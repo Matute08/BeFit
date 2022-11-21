@@ -1,0 +1,135 @@
+.main-entrenamiento{
+    background-image: url(../IMG/7__fondocalendario.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+.titulo-entrenamiento{
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    h1{
+        font-size: 3em;
+    } 
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-shadow: 0 3px 7px -1px rgba(#000, .1);
+    margin-bottom: 1.6%;
+    background: $blanco;
+    line-height: 1.4;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+    &:hover {
+        .photo {
+            transform: scale(1.3) rotate(3deg);
+        }
+    }
+    .meta {
+        position: relative;
+        z-index: 0;
+        height: 200px;
+    }
+    .photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        transition: transform .2s;
+    }
+    .details,
+    .details ul {
+        margin: auto;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .description {
+        padding: 1rem;
+        background: $rosa-5;
+        position: relative;
+        z-index: 1;
+        h1 {
+            line-height: 1;
+            margin: 0;
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: rgb(67, 65, 65);
+            margin-top: 5px;
+        }
+    }
+    p {
+        position: relative;
+        margin: 1rem 0 0;
+
+        &:first-of-type {
+            margin-top: 1.25rem;
+            &:before {
+            content: "";
+                position: absolute;
+                height: 5px;
+                background: $rosa-1;
+                width: 35px;
+                top: -0.75rem;
+                border-radius: 3px;
+            }
+        }
+    }
+    &:hover {
+      .details {
+        left: 0%;
+      }
+    }
+
+
+@media (min-width: 640px) {
+    flex-direction: row;
+    max-width: 800px;
+    .meta {
+      flex-basis: 40%;
+      height: auto;
+    }
+    .description {
+      flex-basis: 60%;
+      &:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: $rosa-5;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+    &.alt {
+      flex-direction: row-reverse;
+      .description {
+        &:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg)
+        }
+      }
+      .details {
+        padding-left: 25px;
+      }
+    }
+  }}
