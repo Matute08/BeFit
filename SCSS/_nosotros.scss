@@ -23,51 +23,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-}/*
-.card-property{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 10px 0 10px;
-    width: 80%;
-    justify-items: center;
 }
-.card-profes{
-    width: 400px;
-    margin: 28px 12px 28px 12px;
-    display: flex;
-    justify-content: center;
-
-    background-image: url(../IMG/4__fondoCards.png);
-    background-size:cover ;
-    background-repeat: no-repeat;
-
-    border-radius: 10% 15% 10% 15%;
-
-    transition: all 400ms ease;
-    &:hover{
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
-        transform: translateY(-3%);
-    }
-    img{
-        height: 300px;
-        width: 300px;
-        align-self: center;
-        margin-top: 30px;
-        border-radius: 50px;
-    }
-}
-.card-body{
-    .card-title{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        h5{
-            font-size: 2em;
-            color: $blanco;
-            text-decoration:underline $rosa-3;
-        }
-    }
-} */
 .titulosecundario-nosotros{
     display: flex;
     justify-content: center;
@@ -225,7 +181,10 @@
     border: none !important;
     h2{
         color: $rosa-1;
-        margin: 20px;
+        background-color: rgba($color: black, $alpha: .6);
+        border-radius: 15px;
+        padding: 4px;
+        margin: 20px 20px 20px 10px;
         opacity: 0;
         transition: opacity 1s ease  ;
 
